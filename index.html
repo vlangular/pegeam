@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="swApp">
+    <head>
+        <title>Vremea</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load bootstrap and fontawesome via CDN -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
+        <!-- load angular via CDN -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+        <script src="/public/js/angular-ui-router.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-resource.js"></script>
+        <script src="app.js"></script>
+        <script src="routes.js"></script>
+    </head>
+    <body>
+
+        <header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" ui-sref="home">Vremea în toată țara</a>
+				</div>
+
+				<ul class="nav navbar-nav">
+					<li><a ui-sref="home"><i class="fa fa-home"></i> Orașe</a></li>
+				</ul>
+			</div>
+			</nav>
+		</header>
+
+        <div class="container">
+
+            <div ui-view></div>
+
+		</div>
+
+    </body>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</html>

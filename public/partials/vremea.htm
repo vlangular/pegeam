@@ -1,0 +1,4 @@
+<div class="jumbotron">
+  <h1>Vremea în {{ city }}</h1>
+  <day-item ng-repeat="day in weatherResult.list" day-results="day" convert-my-date="convertMyDate(dt)" convert-to-celsius="convertToCelsius(temp)"></day-item>
+</div>
